@@ -97,7 +97,7 @@ header a.logo:hover {
   display: none; /* set display to none, so dropdown menu won't show till hover dropdown */
   position: absolute;
   right: 0;
-  background-color: rgba(0, 102, 102, 0.8);
+  background-color: #887766;
   /*min-width: 280px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;*/
@@ -125,7 +125,7 @@ header a.logo:hover {
 
 .dropdown:hover {
   transition: all 0.5s ease;
-  background-color: rgba(0, 102, 102, 0.8);
+  background-color: #887766;
 }
 
 .active-menu-item {
@@ -184,23 +184,22 @@ header.page-6 {
 /* BEG styling headings */
 h1 {
   margin: 0px 0px 1em 0px;
-  color: #076d6f;
+  color: white;
   font-size: 1.7em;
   font-weight: regular;
   font-family: "Font Family 1";
 }
 
 h2 {
-  font-family: "Font Family 1";
-}
-
-h3 {
   margin: 30px 0px 10px 0px;
   color: black;
   font-size: 2em;
   font-weight: normal;
   letter-spacing: normal;
   font-family: "Font Family 3";
+}
+
+h3 {
 }
 
 h4 {
@@ -215,10 +214,17 @@ h4 {
 /* END styling headings */
 
 a {
-  color: #00a2ff;
+  color: black;
   text-decoration: none;
 }
-
+p {
+  font-family: "font family 4";
+  line-height: 170%;
+  font-size: 18px;
+}
+strong {
+  font-weight: bolder;
+}
 .to-top {
   width: 100%;
   padding: 30px;
@@ -235,6 +241,8 @@ footer > div.social-icon {
   padding: 30px;
   display: flex;
   justify-content: space-around;
+  background-color: #887766;
+  opacity: 80%;
 }
 
 @media screen and (max-width: 750px) {
