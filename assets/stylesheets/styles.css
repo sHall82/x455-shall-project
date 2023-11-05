@@ -208,6 +208,7 @@ h2 {
   font-weight: normal;
   letter-spacing: normal;
   font-family: "Font Family 3";
+  padding-bottom: 30px;
 }
 
 h3 {
@@ -233,8 +234,7 @@ h4 {
 }
 
 h5 {
-  width: 685px;
-  height: 50px;
+ 
   flex-shrink: 0;
   color: white;
   text-align: center;
