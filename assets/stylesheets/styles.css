@@ -355,6 +355,9 @@ footer > div.social-icon {
     min-width: 500px;
   }
 
+.bottom-left {
+  font-size: 50px;
+}
   header a.logo {
     position: absolute;
     top: 5px;
@@ -381,5 +384,6 @@ footer > div.social-icon {
   header.page-6 {
     /* add you own header here */
   }
+
 }
 /********** END for dropdown menu in small screen **********/

@@ -14,9 +14,24 @@
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-evenly;
-      padding: 0;
+      padding: 0px 160px 0px 0px;
     }
     </style>
+
+<style>
+  .accordion {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 40px;
+    text-align: center;
+    background-color: black;
+  }
+  .panel {
+    display: none;
+    overflow: hidden;
+  }
+</style>
+    
 </head>
 
 <header>
@@ -64,23 +79,77 @@
           <div class="flex-container">
             <!-- start with 1 video and add more to watch the alignment of flex display -->
             <!-- type html/css code here -->'
+           
             <div style="width: 500px; word-wrap:vbreak-word;">
-              <h6>Bringing Home a Rescue Dog</h6>
+              <h2>Bringing Home a Rescue Dog</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MfV97DUpWiQ?si=XM8IMI_5pE5Th3OS" title="YouTube video player" frameborder="0"
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
+            
+             <section style="width: 560px;">
+              <h6> Bringing Home Your Rescue Pet: Essential Tips for a Smooth Transition </h6>
+              <div class="accordion"><span class="fa fa-angle-down"></span> </div>
+              <div class="panel">
+                <p>
+                  Welcoming a rescue pet into your home? Watch this video for essential tips and advice
+                  on making the transition as smooth as possible for your new furry friend! From creating
+                  a safe space to building trust, we've got you covered. And the importance of establishing
+                  routines, we've got all the insights you need for a seamless transition Don't forget to
+                  subscribe for more pet care tips and heartwarming rescue stories! 
+                </p>
+              </div>
+             
+            </section>
+            
+            
+            </div>
       
           <div style="width: 500px; word-wrap:vbreak-word;">
-            <h6>Training a Rescue Dog</h6>
+            <h2>Training a Rescue Dog</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Wc6FZWGlQTk?si=CuHk3TCjJzNHXJzz" title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+            <section style="width: 560px;">
+              <h6> Training a Rescue Dog: Transforming Paws into Pals  </h6>
+              <div class="accordion"><span class="fa fa-angle-down"></span> </div>
+              <div class="panel">
+                <p>
+                Bringing out the best in your rescue dog is a journey filled with love, patience,
+                and positive reinforcement. Watch our expert training tips in this video to help
+                your rescue pup become the well-behaved companion you've always dreamed of! From
+                basic commands to building trust, we've got you covered. Training your adopted 
+                dog will be a bonding journey. Subscribe for more canine wisdom and success stories! 
+                </p>
+              </div>
+
+              
+             
+            </section>
+          </div>
         </div>
         </section>
       </body>
-
     </div>
   </article>
+
+  <!-- BEG JavaScript -->
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;  // .nextElementSibling vs .previousElementSibling
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+        this.innerHTML = "<span class='fa fa-angle-down'></span>";
+      } else {
+        panel.style.display = "block";
+        this.innerHTML = "<span class='fa fa-angle-up'></span>";
+      }
+    });
+  }
+</script>
+<!-- END JavaScript -->
+  
   <section style="padding: 40px">
     <!-- TODO: add sidebar content here -->
   </section>
@@ -103,5 +172,8 @@
 
   </footer>
 </body>
+
+
+
 
 </html>
