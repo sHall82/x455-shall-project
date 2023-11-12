@@ -54,6 +54,28 @@
     #About {
       color: black;
     }
+
+    section {
+      width: 30%;
+      float: left;
+      padding: 40px;
+      position: sticky;
+      top: 0px;
+      color: #000;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 35px;
+    }
+
+    @media screen and (max-width: 500px) {
+      section {
+        width: 100%;
+        float: none;
+        position: relative;
+      }
+    }
   </style>
 </head>
 
@@ -88,7 +110,7 @@
       <h2>About</h2>
       <p>
         <img class="size03 float-right padding-right" src="assets/images/AboutPic1.jpg"
-          alt="Intro to Adoptables" style="margin-left: 10px; margin-bottom: 10px;"/>
+          alt="Intro to Adoptables" style="margin-left: 10px; margin-bottom: 10px; max-width: 100%;"/>
         
 Adoptables specializes in finding forever homes for adoptable pets in need. Our dedicated team of animal lovers works tirelessly to rescue and rehabilitate animals, ensuring they are ready for their second chance at a happy life.
 But we don't stop there! We offer a wide range of services to support both pets and their loving owners:
@@ -103,7 +125,7 @@ Join us at Paws and Hearts Rescue, where we believe that every pet deserves a lo
       <h2 id="Our Staff">Staff</h2>
       <p>
         <img class="size03 float-left padding-right" src="assets/images/AboutPic2.jpeg"
-          alt="Staff" style="margin-right: 10px; margin-bottom: 10px;">
+          alt="Staff" style="margin-right: 10px; margin-bottom: 10px; max-width: 100%;">
         Animal rescue organizations typically have dedicated staff and volunteers who work tirelessly to care for a wide range of animals, including cats, dogs, and smaller pets like rabbits, guinea pigs, hamsters, and birds. The staff involved in an animal rescue organization often includes the following roles:
       </p>
       <p>
@@ -121,8 +143,7 @@ Join us at Paws and Hearts Rescue, where we believe that every pet deserves a lo
 
     </div>
   </article>
-  <section style="width: 30%; float: left; padding: 40px; position: sticky; top: 0px; width: 320px;
-  height: 105px; flex-shrink: 0; color: #000; text-align: center; font-size: 18px; font-style: normal;font-weight: 300; line-height: 35px; /* 194.444% */">
+  <section>
     
     <!-- TODO: add sidebar content here -->
     
