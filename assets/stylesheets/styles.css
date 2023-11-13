@@ -29,6 +29,11 @@
   src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Font Family 6";
+  src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -207,7 +212,7 @@ h2 {
   font-size: 2em;
   font-weight: normal;
   letter-spacing: normal;
-  font-family: "Font Family 3";
+  font-family: "Font Family 6";
   padding-bottom: 30px;
 }
 
@@ -252,7 +257,9 @@ h6 {
     font-weight: lighter;
     letter-spacing: normal;
     font-family: "Font Family 3";
+    padding-bottom: 20px;
   }
+
 
 /* END styling headings */
 
