@@ -285,12 +285,15 @@ li {
 
 li span {
   position: relative;
-  left: -20px;
+  left: 0px;
 }
 
 ul {
   font-family: "Font Family 3";
   font-size: 16px;
+  text-align: left;
+  padding-left: 37%;
+
 }
 
 strong {
